@@ -147,8 +147,8 @@ def main_flow(train_path: str = './data/green_tripdata_2021-01.parquet',
     best = train_model_search(train, valid, y_val)
     train_best_model(X_train, X_val, y_train, y_val, dv, wait_for=best)
 
-if __name__ == '__main__':
-    main_flow()
+# if __name__ == '__main__':
+#     main_flow()
 
 # from prefect.deployments import Deployment
 # #from prefect.orion.schemas.schedules import IntervalSchedule
